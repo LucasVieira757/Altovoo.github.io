@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title> Formulario A Escola Magnus</title>
+
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap:100" rel="stylesheet">
+	<link rel="stylesheet" href="estilo.css">
+	
+
+	
+	<script>
+		function enviar() {
+			alert("Formulario Enviado com sucesso!!")
+		}
+		function mostrarpass() {
+			var senha = document.getElementById("cpass");
+			if (senha.type === "password")
+				senha.type = "text";
+			else
+				senha.type = "password"
+		}
+	</script>
+
+</head>
+
+<body>
+
+
+	<form action="funcao.php">
+		<section>
+			<div>
+				<label for=""> Nome :</label>
+				<input type="text" name="ctext" id="ctext" max="30" />
+			</div>
+			<div>
+				<label for="cdate "> Data de ida :</label>
+				<input type="date" name="cdate" id="cdate" value="Desabilitado" max="2025-01-01" />
+			</div>
+            <div>
+				<label for="cdate "> Data de volta:</label>
+				<input type="date" name="cdate" id="cdate" value="Desabilitado" max="2025-01-01" />
+			</div>
+		</section>
+		<section>
+			<div>
+				<label for=""> Local de origem</label>
+				<input type="text" name="ctext" id="ctext" max="30" />
+			</div>
+            <div>
+				<label for=""> Local de destino </label>
+				<input type="text" name="ctext" id="ctext" max="30" />
+			</div>
+			<div>
+				<label for="cmail">Email:</label>
+				<input type="email" name="cmail" id="cmail" placeholder="email@dominio.com.br">
+			</div>
+
+			<div>
+				<label for="cphone">Celular</label>
+				<input type="tel" id="cphone" name="cphone" pattern="[0-9]{3}-[0-9]{5}-[0-9]{4}"
+					placeholder="XXX-XXXXX-XXXX">
+			</div>
+		</section>
+		<section>
+			<div>
+				<label for="cnumber "> Quantos passageiros  </label>
+				<input type="number" name="cnumber" id="cnumber" value="Desabilitado" min="1" max="10" />
+			</div>
+			<div>
+				<p>Melhor horario para viagem </p>
+				<label for=""> <input type="radio" name="radio" value="1">Manhã </label>
+				<label for=""> <input type="radio" name="radio" value="2">Tarde </label>
+			</div>
+			<span> Informações extras  </span>
+
+			<div>
+
+				<input type="checkbox" id="chobbe2" value="musicalização">
+				<label for="chobby1">Passeios no local </label>
+			</div>
+			<div>
+
+				<input type="checkbox" id="chobbe3" value="judô">
+				<label for="chobby3"> Transfer </label>
+			</div>
+			<div>
+				<input type="checkbox" id="chobbe4" value="pintura">
+				<label for="chobby4"> Pets </label>
+			</div>
+			<div>
+				<input type="checkbox" id="chobbe5" value="futebol">
+				<label for="chobby"> umantes </label>
+			</div>
+			
+		</section>
+		<footer>
+			<div>
+				<input type="submit" value="Enviar Formulario" onclick="enviar()">
+				<button type="reset">Limpar</button>
+				<a href="index.html"></a>
+
+			</div>
+		</footer>
+	</form>
+	<a class="back-link"  href="index.html">Voltar ao início<a>
+
+</body>
+
+</html>

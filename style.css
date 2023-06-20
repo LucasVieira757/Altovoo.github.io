@@ -1,0 +1,478 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+
+  --ouro: #e28037;
+  --preto: #1da6a3;
+}
+
+body {
+  font-family: 'Pacifico', cursive;
+}
+
+header {
+  background-color: var(--ouro);
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+header h1 {
+  display: inline-block;
+  text-align: center;
+  padding: 0px;
+
+}
+
+header img {
+  border-radius: 40px;
+  margin-left: 500px;
+}
+
+nav {
+  background-color: var(--preto);
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+
+}
+
+nav ul {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  padding: 0px;
+}
+
+nav li {
+  display: inline-block;
+  text-align: center;
+  padding: 0px;
+
+}
+
+nav li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+nav li a:hover {
+  background-color: var(--ouro);
+  color: black;
+}
+
+
+/* Estilos para a seção de destaque */
+
+.destaque {
+  align-items: center;
+  background-color: var(--ouro);
+  color: black;
+  padding: 2rem;
+
+}
+
+.destaque img {
+  width: 80%;
+}
+
+.destaque h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.destaque p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.destaque button {
+  background-color: var(--preto);
+  color: var(--ouro);
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.destaque button:hover {
+  background-color: var(--preto);
+  color: black;
+}
+
+.destaque button:active {
+  background-color: var(--preto);
+  color: black;
+}
+
+/* Estilos para a seção de produtos */
+
+
+.destaque article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.destaque img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+}
+
+.destinos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+
+}
+
+.destinos h2 {
+  color: #00ffbb;
+  text-shadow: 0 0 10px #00ffbb,
+    0 0 20px #00ffbb,
+    0 0 40px #00ffbb,
+    0 0 80px #00ffbb,
+    0 0 160px #00ffbb;
+  padding: 20px;
+
+}
+
+.destinos h3 {
+  color: black;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.destinos p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.destinos ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.destinos li {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.destinos img {
+
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+
+}
+
+.destaque h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.destaque .preco {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.lado {
+  right: 10px;
+}
+
+.destaque button {
+  background-color: var(--preto);
+  color: black;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.destaque button:hover {
+  background-color: var(--ouro);
+  color: var(--preto);
+}
+
+.produtos h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--preto);
+  text-align: center;
+  margin: 0;
+}
+
+.produtos ul {
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.produtos li {
+  background-color: var(--ouro);
+  border-radius: 0.25rem;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+}
+
+.produtos li img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+
+.produtos li p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.produtos li button {
+  background-color: var(--preto);
+  color: black;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.produtos li button:hover {
+  background-color: var(--ouro);
+  color: black;
+}
+
+.produtos li button:active {
+  background-color: var(--preto);
+  color: black;
+}
+
+.produtos li button:focus {
+  background-color: var(--preto);
+  color: black;
+}
+
+
+.produtos li .preco {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.produtos li button {
+  background-color: var(--preto);
+  color: black;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.produtos li button:hover {
+  background-color: var(--ouro);
+  color: var(--preto);
+}
+
+.pacote-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  margin: 2rem;
+
+}
+
+.pacote-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 40%;
+  margin: 2rem;
+  margin-left: 400px;
+  margin-top: -30px;
+
+}
+
+.produtos h2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--preto);
+  text-shadow: 2px 2px 2px var(--ouro);
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-align: center;
+
+
+}
+
+
+iframe {
+  width: 100%;
+  margin: 2rem;
+  text-align: center;
+  color: var(--preto);
+  margin-left: 5px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+
+}
+
+.contato {
+  padding: 20px 0px 0px 0px
+}
+
+.contato li {
+  padding: 10px 5px 5px 5px
+}
+
+.produtos button {
+  background-color: var(--ouro);
+  color: var(--ouro);
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  margin-left: 450px;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  width: 200px;
+
+
+}
+
+.produtos button:hover {
+  background-color: var(--preto);
+  color: black;
+}
+
+.produtos button:active {
+  background-color: var(--ouro);
+  color: black;
+}
+
+.produtos p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/*footer*/
+.cont {
+  width: 100%;
+}
+
+footer {
+  padding-top: 30px;
+  background-color: var(--preto);
+  color: #bbb;
+  text-align: center;
+
+}
+
+footer a {
+  color: #999;
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #aaa;
+  text-decoration: none;
+  border-bottom: 1px dotted #999;
+}
+
+footer .form-control {
+  background-color: #1f2022;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  border: none;
+  resize: none;
+  color: #d1d2d2;
+  padding: 0.7em 1em;
+}
+
+.btn {
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: rgb(14, 14, 26);
+  color: #e28037;
+  font-weight: 700;
+  transition: 0.6s;
+  box-shadow: 0px 0px 60px #1f4c65;
+  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4));
+  margin-left: 450px;
+  margin-top: 40px;
+  margin-bottom: 90px;
+}
+
+.btn:active {
+  scale: 0.92;
+}
+
+.btn:hover {
+  background: rgb(2, 29, 78);
+  background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+  color: rgb(4, 4, 38);
+}
+
+@media (max-width: 992px) {
+  .btn {
+    margin: 0;
+    margin-left: 270px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+  }
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.92);
+}
+
+.btn:hover {
+  background: rgb(2, 29, 78);
+  background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+  color: rgb(4, 4, 38);
+}
+
+.btn:hover {
+  background: rgb(2, 29, 78);
+}

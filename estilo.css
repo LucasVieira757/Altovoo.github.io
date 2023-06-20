@@ -1,0 +1,30 @@
+div {
+    margin: 10px;
+}
+
+form,
+h2 {
+    width: 50%;
+    margin: auto;
+    border: 1px solid#2EC4B6;
+    border-radius: 5 px;
+    background-color: #2EC4B6;
+    padding: 5px;
+}
+
+body {
+    background-color:#e28037;
+}
+
+h2 {
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+h2 {
+    text-align: center
+}
+
+p {
+    font-size: px;
+}
